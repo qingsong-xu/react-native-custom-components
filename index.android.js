@@ -25,10 +25,10 @@ export default class ZTXDComponents extends Component {
                 <TextInputFlat
                     style={styles.input}
                     label={'手机号'}
-                    labelStyle={{ color: '#008445' }}
+                    labelStyle={{color: '#008445'}}
                 />
 
-                <TextInput style={styles.input} />
+                <TextInput style={styles.input}/>
             </View>
         );
     }
@@ -40,11 +40,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
-        padding:16
+        padding: 16
     },
     input: {
         marginTop: 4,
-        width:Dimensions.get('window').width
+        width: Dimensions.get('window').width - 30,
     },
 
 });
