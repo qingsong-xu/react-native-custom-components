@@ -39,8 +39,8 @@ export default class TextInputFlat extends BaseInput {
         if (this.state.value && this.isFocused()) {
             return (
                 <TouchableOpacity onPress={this.clear.bind(this)}
-                                  style={{position: 'absolute', right: 4,backgroundColor:'red'}}>
-                    <Image source={require('./../res/image/delete.png')} style={{width: 30, height: 30,}}
+                                  style={{position: 'absolute', right: 4, backgroundColor: 'red'}}>
+                    <Image source={require('./res/image/delete.png')} style={{width: 30, height: 30,}}
                            resizeMode={'contain'}/>
                 </TouchableOpacity>
             );
@@ -57,7 +57,7 @@ export default class TextInputFlat extends BaseInput {
         if (this.props.inputType == "password") {
             return (
                 <TouchableOpacity onPress={this._togglePW.bind(this)} style={{position: 'absolute', right: 4}}>
-                    <Image source={require('./../res/image/cleartext.png')}/>
+                    <Image source={require('./res/image/cleartext.png')}/>
                 </TouchableOpacity>
             )
         } else {
@@ -92,11 +92,11 @@ export default class TextInputFlat extends BaseInput {
                         onChange={this._onChange}
                         onFocus={this._onFocus}
                     />
-                    {/*{this._showPassword()}*/
-                    }
+
                 </View>
 
-                {this._showDelete()}
+                {/*{this._showDelete()}*/}
+                {/*{this._showPassword()}*/}
 
                 < TouchableWithoutFeedback
                     onPress={this.focus}>
